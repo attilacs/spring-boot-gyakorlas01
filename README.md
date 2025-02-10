@@ -30,3 +30,8 @@
 ```
 java -jar package-name.jar
 ```
+## H2 Database
+- url: [http://localhost:8080/h2-console/](http://localhost:8080/h2-console/)
+- JDBC url: `jdbc:h2:mem:db`
+- user: `user`
+- password: `password`
