@@ -18,10 +18,11 @@ public class UserService {
     }
 
     private User userInputToEntity(CreateUserDto createUserDto) {
+        Boolean isFirstUser = userRepository.count() == 0;
         return User.builder()
                 .name(createUserDto.getName())
                 .password("password")
-                .isAdmin(false)
+                .isAdmin(isFirstUser)
                 .build();
     }
 
